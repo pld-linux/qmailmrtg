@@ -1,4 +1,5 @@
-Summary:	qmailmrtg
+Summary:	qmailmrtg - qmail statistics as mrtg graphs
+Summary(pl):	qmailmrts - statystyki qmaila w postaci wykresów mrtg
 Name:		qmailmrtg
 Version:	4.2
 Release:	0.2
@@ -16,7 +17,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 qmailmrtg7 uses qmail's excellent and extensive logging via multilog,
-tcpserver and qmail-send. qmailmrtg7 takes the pop3 smtp and qmail
+tcpserver and qmail-send. qmailmrtg7 takes the pop3, smtp and qmail
 transaction logs and sends them to 9 different mrtg graphs, each graph
 with 4 historical time series.
 
@@ -28,6 +29,21 @@ Features:
   command line options. See the qmail.mrtg.cfg for working examples of
   the options.
 - Works on any system that supports qmail
+
+%description -l pl
+qmailmrtg7 u¿ywa dobrego i rozszerzalnego systemu logowania poprzez
+multilog, tcpserver i qmail-send. qmailmrtg7 pobiera logi transakcji
+pop3, smtp i qmaila, a nastêpnie rozsy³a je na 9 ró¿nych wykresów
+mrtg, ka¿dy z 4 okresami czasu.
+
+Mo¿liwo¶ci:
+- bardzo szybki - zwykle przetwarza dane poni¿ej 2 sekund
+- inteligentnie u¿ywa znaczników czasu pliku multilog w celu
+  okre¶lenia, które logi otworzyæ i przetworzyæ
+- jest to prosty, ma³y program w C bez zewnêtrznych zale¿no¶ci i z
+  prostymi opcjami linii poleceñ; dzia³aj±ce przyk³ady opcji mo¿na
+  znale¼æ w pliku qmail.mrtg.cfg
+- dzia³a na ka¿dym systemie, na którym dzia³a qmail
 
 %prep
 %setup -q -n %{name}7-%{version}
