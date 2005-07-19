@@ -2,17 +2,18 @@ Summary:	qmailmrtg - qmail statistics as mrtg graphs
 Summary(pl):	qmailmrts - statystyki qmaila w postaci wykresów mrtg
 Name:		qmailmrtg
 Version:	4.2
-Release:	0.2
+Release:	0.3
 Epoch:		0
 License:	GPL v2
 Group:		Applications/Mail
 Source0:	http://www.inter7.com/qmailmrtg7/%{name}7-%{version}.tar.gz
 # Source0-md5:	b723ae00ecdffe87cf259e39a9fe6eb9
 URL:		http://www.inter7.com/index.php?page=qmailmrtg7
-Requires:	daemontools
-Requires:	mrtg
-Requires:	qmail
-Requires:	ucspi-tcp
+# Doesn't require any of these directly:
+#Requires:	daemontools
+#Requires:	mrtg
+#Requires:	qmail
+#Requires:	ucspi-tcp
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
