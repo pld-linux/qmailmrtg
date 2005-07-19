@@ -2,7 +2,7 @@ Summary:	qmailmrtg - qmail statistics as mrtg graphs
 Summary(pl):	qmailmrts - statystyki qmaila w postaci wykresów mrtg
 Name:		qmailmrtg
 Version:	4.2
-Release:	0.3
+Release:	0.4
 Epoch:		0
 License:	GPL v2
 Group:		Applications/Mail
@@ -62,8 +62,8 @@ EOF
 %install
 rm -rf $RPM_BUILD_ROOT
 
-install -d $RPM_BUILD_ROOT%{_libdir}/qmail
-install qmailmrtg7 $RPM_BUILD_ROOT%{_libdir}/qmail
+install -d $RPM_BUILD_ROOT%{_sbindir}
+install qmailmrtg7 $RPM_BUILD_ROOT%{_sbindir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -73,4 +73,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc AUTHORS ChangeLog FAQ INSTALL Info TODO
 %doc index.html
 %doc qmail.mrtg.cfg
-%attr(755,root,root) %{_libdir}/qmail/qmailmrtg7
+%attr(755,root,root) %{_sbindir}/qmailmrtg7
