@@ -1,5 +1,5 @@
 Summary:	qmailmrtg - qmail statistics as mrtg graphs
-Summary(pl):	qmailmrts - statystyki qmaila w postaci wykresÛw mrtg
+Summary(pl.UTF-8):   qmailmrts - statystyki qmaila w postaci wykres√≥w mrtg
 Name:		qmailmrtg
 Version:	4.2
 Release:	0.4
@@ -31,20 +31,20 @@ Features:
   the options.
 - Works on any system that supports qmail
 
-%description -l pl
-qmailmrtg7 uøywa dobrego i rozszerzalnego systemu logowania poprzez
+%description -l pl.UTF-8
+qmailmrtg7 u≈ºywa dobrego i rozszerzalnego systemu logowania poprzez
 multilog, tcpserver i qmail-send. qmailmrtg7 pobiera logi transakcji
-pop3, smtp i qmaila, a nastÍpnie rozsy≥a je na 9 rÛønych wykresÛw
-mrtg, kaødy z 4 okresami czasu.
+pop3, smtp i qmaila, a nastƒôpnie rozsy≈Ça je na 9 r√≥≈ºnych wykres√≥w
+mrtg, ka≈ºdy z 4 okresami czasu.
 
-Moøliwo∂ci:
-- bardzo szybki - zwykle przetwarza dane poniøej 2 sekund
-- inteligentnie uøywa znacznikÛw czasu pliku multilog w celu
-  okre∂lenia, ktÛre logi otworzyÊ i przetworzyÊ
-- jest to prosty, ma≥y program w C bez zewnÍtrznych zaleøno∂ci i z
-  prostymi opcjami linii poleceÒ; dzia≥aj±ce przyk≥ady opcji moøna
-  znaleºÊ w pliku qmail.mrtg.cfg
-- dzia≥a na kaødym systemie, na ktÛrym dzia≥a qmail
+Mo≈ºliwo≈õci:
+- bardzo szybki - zwykle przetwarza dane poni≈ºej 2 sekund
+- inteligentnie u≈ºywa znacznik√≥w czasu pliku multilog w celu
+  okre≈õlenia, kt√≥re logi otworzyƒá i przetworzyƒá
+- jest to prosty, ma≈Çy program w C bez zewnƒôtrznych zale≈ºno≈õci i z
+  prostymi opcjami linii polece≈Ñ; dzia≈ÇajƒÖce przyk≈Çady opcji mo≈ºna
+  znale≈∫ƒá w pliku qmail.mrtg.cfg
+- dzia≈Ça na ka≈ºdym systemie, na kt√≥rym dzia≈Ça qmail
 
 %prep
 %setup -q -n %{name}7-%{version}
