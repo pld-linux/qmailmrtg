@@ -1,5 +1,5 @@
 Summary:	qmailmrtg - qmail statistics as mrtg graphs
-Summary(pl.UTF-8):   qmailmrts - statystyki qmaila w postaci wykresów mrtg
+Summary(pl.UTF-8):	qmailmrts - statystyki qmaila w postaci wykresów mrtg
 Name:		qmailmrtg
 Version:	4.2
 Release:	0.4
